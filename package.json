@@ -1,0 +1,17 @@
+{
+  "name": "discord-oauth2-utils",
+  "version": "0.0.1",
+  "description": "...",
+  "main": "index.js",
+  "dependencies": {
+    "data-uri-to-buffer": "^4.0.0",
+    "formdata-polyfill": "^4.0.10",
+    "undici": "^5.12.0",
+    "web-streams-polyfill": "^3.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ZFCStar",
+  "license": "ISC"
+}
