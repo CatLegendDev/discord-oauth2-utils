@@ -53,7 +53,12 @@ Returns [Oauth2Data](#oauth2data).
 ### `fetchUser(token): User`
 `token` — you can get token after user authorization and he redirect. `access_token` will become part of the URL address as query.
 
-Returns [User]()
+Returns [User](#user)
 ***
 # Secondary interfaces
-### Oauth2Data
+### Oauth2Data 
+Corresponds https://discord.com/developers/docs/resources/user#get-current-user-guilds.  
+### User
+Object with {user: user, guilds?: Array<guild>}  
+`user` Corresponds https://discord.com/developers/docs/resources/user.  
+`guild` Corresponds https://discord.com/developers/docs/resources/user#get-current-user-guilds.
