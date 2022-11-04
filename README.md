@@ -48,7 +48,7 @@ Returns URL like format:
 ### `getOauth2Data(code): Oauth2Data`
 `code` — you can get code after user authorization and he redirect. Code will become part of the URL address as hash.
 
-Returns [Oauth2Data](https://github.com/ZFCStar/discord-oauth2-utils/new/main?readme=1#oauth2data).
+Returns [Oauth2Data](#oauth2data).
 
 ### `fetchUser(token): User`
 `token` — you can get token after user authorization and he redirect. `access_token` will become part of the URL address as query.
