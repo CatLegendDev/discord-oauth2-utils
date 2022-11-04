@@ -13,9 +13,9 @@
     "test": "node ./test.js"
   },
   "author": "ZFCStar",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
-		"type": "git",
-		"url": "https://github.com/ZFCStar/discord-oauth2-utils"
+     "type": "git",
+     "url": "https://github.com/ZFCStar/discord-oauth2-utils"
   }
 }
