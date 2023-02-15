@@ -7,7 +7,7 @@ class Oauth2 {
         this.clientSecret = clientSecret;
         this.redirectURI = redirectURI;
         this.responseType = responseType;
-        this.scopes = scopes;
+        this.setScopes(scopes);
     }
 
     getLink() {
@@ -16,6 +16,12 @@ class Oauth2 {
             return;
         }
         return generateLink(this);
+    }
+
+    setScopes(scopes){
+        const space = " ";
+        typeof scopes === "string" && (scopes = scopes.split(space));
+        this.scopes = scopes;
     }
 
     async getOauth2Data(code) {
