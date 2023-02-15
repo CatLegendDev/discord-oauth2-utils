@@ -1,6 +1,6 @@
 class Guilds {
-    constructor(guilds) {
-        this.guilds = guilds
+    constructor(guilds){
+        this.guilds = guilds;
     }
 }
 

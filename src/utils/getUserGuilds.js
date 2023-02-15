@@ -9,5 +9,5 @@ export default async (token) => {
     })
 
     const userGuilds = await resp.body.json();
-    return userGuilds
+    return userGuilds;
 };

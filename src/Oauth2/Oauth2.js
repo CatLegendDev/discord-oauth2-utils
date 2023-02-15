@@ -38,7 +38,7 @@ class Oauth2 {
             return;
         }
        
-        const Oauth2Data = await getCodeInfo(this, code)
+        const Oauth2Data = await getCodeInfo(this, code);
         return Oauth2Data;
     }
 
@@ -49,7 +49,7 @@ class Oauth2 {
         }
 
         const userInfo = await getUserInfo(token);
-        const userGuilds = await getUserGuilds(token)
+        const userGuilds = await getUserGuilds(token);
 
         const user = new User({user: userInfo, guilds: userGuilds});
         return user;
