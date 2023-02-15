@@ -11,7 +11,7 @@ export class Oauth2 {
     clientSecret: string;
     redirectURI: string;
     responseType: string;
-    getLink(): string;
+    getLink({state}: {state: string | number = 0}): string;
     setScopes(scopes: string[] | string): void;
     scopes: string[];
     getOauth2Data(code: string): Promise<object>;

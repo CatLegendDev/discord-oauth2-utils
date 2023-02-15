@@ -10,12 +10,12 @@ class Oauth2 {
         this.setScopes(scopes);
     }
 
-    getLink() {
+    getLink({state = 0} = {}) {
         if (this.redirectURI == '') {
             throw new Error('Missing redirectURI');
             return;
         }
-        return generateLink(this);
+        return generateLink({...this, state});
     }
 
     setScopes(scopes){
