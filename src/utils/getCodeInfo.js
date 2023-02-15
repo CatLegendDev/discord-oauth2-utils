@@ -1,7 +1,7 @@
 const { request } = require('undici');
 
 module.exports = async (data, code) => {
-    const body = `client_id=${data.clientId}&client_secret=${data.clientSecret}&code=${code}&redirect_uri=${data.redirectURI}&grant_type=authorization_code&scope=identify`
+    const body = `client_id=${data.clientId}&client_secret=${data.clientSecret}&code=${code}&redirect_uri=${data.redirectURI}&grant_type=authorization_code&scope=${ data.scope }`
     
      const resp = await request('https://discord.com/api/oauth2/token',  {
         method: "POST",
