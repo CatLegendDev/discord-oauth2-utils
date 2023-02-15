@@ -1,4 +1,4 @@
-exports.generateLink = require('./generateLink.js');
-exports.getCodeInfo = require('./getCodeInfo.js');
-exports.getUserInfo = require('./getUserInfo.js');
-exports.getUserGuilds = require('./getUserGuilds.js');
+export {default as generateLink} from './generateLink.js';
+export {default as getCodeInfo} from './getCodeInfo.js';
+export {default as getUserInfo} from './getUserInfo.js';
+export {default as getUserGuilds} from './getUserGuilds.js';

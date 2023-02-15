@@ -1,6 +1,6 @@
-const { request } = require('undici');
+import { request } from 'undici';
 
-module.exports = async ({clientId, clientSecret, redirectURI, scopes}, code) => {
+export default async ({clientId, clientSecret, redirectURI, scopes}, code) => {
 
     const GRAND_TYPE = "authorization_code";
 
@@ -22,4 +22,4 @@ module.exports = async ({clientId, clientSecret, redirectURI, scopes}, code) => 
     });
     const Oauth2Data = await resp.body.json();
     return Oauth2Data;
-}
+};

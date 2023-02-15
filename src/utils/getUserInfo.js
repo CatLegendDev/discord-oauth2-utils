@@ -1,6 +1,6 @@
-const {request} = require('undici')
+import { request } from 'undici';
 
-module.exports = async (token) => {
+export default async (token) => {
     const resp = await request('https://discord.com/api/users/@me', {
         method: 'GET',
         headers: {
@@ -10,4 +10,4 @@ module.exports = async (token) => {
 
     const userInfo = await resp.body.json();
     return userInfo
-}
+};

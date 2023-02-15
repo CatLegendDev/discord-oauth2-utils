@@ -1,4 +1,4 @@
-module.exports = ({ clientId, redirectURI, responseType, scopes, state = 0 }) => {
+export default ({ clientId, redirectURI, responseType, scopes, state = 0 }) => {
     const BASE = "https://discord.com/api/oauth2/authorize?";
 
     const params = new URLSearchParams({
@@ -11,4 +11,4 @@ module.exports = ({ clientId, redirectURI, responseType, scopes, state = 0 }) =>
 
     const url = `${ BASE }${ params }`;
     return url;
-}
+};

@@ -1,4 +1,4 @@
-const Guilds = require('./Guilds.js')
+import Guilds from './Guilds.js';
 
 class User {
     constructor({user, guilds}) {
@@ -7,4 +7,4 @@ class User {
     }
 }
 
-module.exports = User;
+export default User;

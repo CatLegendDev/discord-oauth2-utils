@@ -1,5 +1,5 @@
-const { generateLink, getCodeInfo, getUserInfo, getUserGuilds } = require('../utils/utils.js');
-const User = require ('./User.js');
+import { generateLink, getCodeInfo, getUserInfo, getUserGuilds } from '../utils/utils.js';
+import User from './User.js';
 
 class Oauth2 {
     constructor({clientId, clientSecret, redirectURI='', responseType='code', scopes=['identify']}) {
@@ -57,4 +57,5 @@ class Oauth2 {
     
 }
 
-module.exports = Oauth2;
+export default Oauth2;
+export {Oauth2};

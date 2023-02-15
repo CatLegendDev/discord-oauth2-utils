@@ -4,4 +4,4 @@ class Guilds {
     }
 }
 
-module.exports = Guilds;
+export default Guilds;

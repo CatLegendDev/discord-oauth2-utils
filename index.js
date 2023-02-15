@@ -1,1 +1,1 @@
-exports.Oauth2 = require('./src/Oauth2/Oauth2.js');
+export { Oauth2 } from './src/Oauth2/Oauth2.js';
