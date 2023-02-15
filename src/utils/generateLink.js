@@ -1,4 +1,14 @@
-module.exports = (data) => {
-    const url = `https://discord.com/api/oauth2/authorize?client_id=${data.clientId}&redirect_uri=${data.redirectURI}&response_type=${data.responseType}&scope=${data.scopes.join('%20')}`;
+module.exports = ({ clientId, redirectURI, responseType, scopes, state = 0 }) => {
+    const BASE = "https://discord.com/api/oauth2/authorize?";
+
+    const params = new URLSearchParams({
+        "client_id": clientId,
+        "response_type": responseType,
+        "redirect_uri": redirectURI,
+        "scope": scopes.join(" "),
+        "state": String(state)
+    }).toString();
+
+    const url = `${ BASE }${ params }`;
     return url;
 }
