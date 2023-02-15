@@ -1,4 +1,7 @@
-# discord-oauth2-utils | The newer universal module for work with Discord API
+npm:  
+https://www.npmjs.com/package/discord-oauth2-utils
+
+# Discord-oauth2-utils | The newer universal module for work with Discord API
 ### npm module for working with Discord OAuth2
 `npm install discord-oauth2-utils`  
 ###### Check discord OAuth2 documentation: https://discord.com/developers/docs/topics/oauth2
