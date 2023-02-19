@@ -48,10 +48,10 @@ Returns URL like format:
 
 
 
-### `getOauth2Data(code): Oauth2Data`
+### `getOAuth2Data(code): OAuth2Data`
 `code` — you can get code after user authorization and he redirect. Code will become part of the URL address as hash.
 
-Returns [Oauth2Data](#oauth2data).
+Returns [OAuth2Data](#oauth2data).
 
 ### `fetchUser(token): User`
 `token` — you can get token after user authorization and he redirect. `access_token` will become part of the URL address as query.
@@ -59,7 +59,7 @@ Returns [Oauth2Data](#oauth2data).
 Returns [User](#user)
 ***
 # Secondary interfaces
-### Oauth2Data 
+### OAuth2Data 
 Corresponds https://discord.com/developers/docs/resources/user#get-current-user-guilds.  
 ### User
 Object with {user: user, guilds?: Array<guild>}  

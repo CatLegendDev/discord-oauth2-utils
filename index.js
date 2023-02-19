@@ -1,1 +1,1 @@
-export { Oauth2 } from './src/Oauth2/Oauth2.js';
+export { OAuth2 } from './src/OAuth2/OAuth2.js';

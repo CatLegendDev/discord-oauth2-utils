@@ -1,5 +1,5 @@
-export default Oauth2;
-export class Oauth2 {
+export default OAuth2;
+export class OAuth2 {
     constructor({ clientId, clientSecret, redirectURI, responseType, scopes }: {
         clientId: string;
         clientSecret: string;
@@ -14,7 +14,7 @@ export class Oauth2 {
     getLink({state}: {state: string | number = 0}): string;
     setScopes(scopes: string[] | string): void;
     scopes: string[];
-    getOauth2Data(code: string): Promise<object>;
+    getOAuth2Data(code: string): Promise<object>;
     fetchUser(token: string): Promise<User>;
 }
 import User from "./User.js";

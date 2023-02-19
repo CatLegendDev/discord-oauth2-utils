@@ -1,7 +1,7 @@
 import { generateLink, getCodeInfo, getUserInfo, getUserGuilds } from '../utils/utils.js';
 import User from './User.js';
 
-class Oauth2 {
+class OAuth2 {
     constructor({clientId, clientSecret, redirectURI='', responseType='code', scopes=['identify']}) {
         this.clientId = clientId;
         this.clientSecret = clientSecret;
@@ -24,7 +24,7 @@ class Oauth2 {
         this.scopes = scopes;
     }
 
-    async getOauth2Data(code) {
+    async getOAuth2Data(code) {
         if (!code) {
             throw new Error('Missing code');
             return;
@@ -38,8 +38,8 @@ class Oauth2 {
             return;
         }
        
-        const Oauth2Data = await getCodeInfo(this, code);
-        return Oauth2Data;
+        const OAuth2Data = await getCodeInfo(this, code);
+        return OAuth2Data;
     }
 
     async fetchUser(token) {
@@ -57,5 +57,5 @@ class Oauth2 {
     
 }
 
-export default Oauth2;
-export {Oauth2};
+export default OAuth2;
+export {OAuth2};

@@ -20,6 +20,6 @@ export default async ({clientId, clientSecret, redirectURI, scopes}, code) => {
 	        'Content-Type': 'application/x-www-form-urlencoded',
 		}
     });
-    const Oauth2Data = await resp.body.json();
-    return Oauth2Data;
+    const OAuth2Data = await resp.body.json();
+    return OAuth2Data;
 };
