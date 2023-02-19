@@ -1,0 +1,30 @@
+{
+  "name": "discord-oauth2-utils",
+  "version": "2.1.3-0",
+  "type": "module",
+  "description": "library for working with discord authorization",
+  "main": "index.js",
+  "dependencies": {
+    "data-uri-to-buffer": "^4.0.0",
+    "formdata-polyfill": "^4.0.10",
+    "undici": "^5.20.0",
+    "web-streams-polyfill": "^3.2.1"
+  },
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "author": "ZFCStar",
+  "license": "MIT license",
+  "keywords": [
+    "discord",
+    "api",
+    "node",
+    "discordapp",
+    "oauth2",
+    "utils"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZFCStar/discord-oauth2-utils"
+  }
+}
