@@ -1,6 +1,6 @@
 {
   "name": "discord-oauth2-utils",
-  "version": "2.1.0",
+  "version": "2.1.1-7",
   "type": "module",
   "description": "library for working with discord authorization",
   "main": "index.js",
