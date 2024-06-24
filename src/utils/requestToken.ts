@@ -1,18 +1,16 @@
 import { request } from "undici";
-import type { Grant, Scope } from "utils/types.js";
+import type { Grant } from "utils/types.js";
 
 export const requestToken = async (
   {
     clientId,
     clientSecret,
     redirectUri,
-    scopes,
     grantType = "authorization_code",
   }: {
     clientId: string;
     clientSecret: string;
     redirectUri: string;
-    scopes: Scope[];
     grantType: Grant;
   },
   code: string
@@ -21,7 +19,6 @@ export const requestToken = async (
     client_id: clientId,
     client_secret: clientSecret,
     redirect_uri: redirectUri,
-    scope: scopes.join(" "),
     code: code,
     grant_type: grantType,
   }).toString();

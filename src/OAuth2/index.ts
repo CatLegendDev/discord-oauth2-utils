@@ -48,7 +48,6 @@ export class OAuth {
         clientId: this.clientId,
         clientSecret: this.clientSecret,
         redirectUri: this.redirectUri,
-        scopes: this.scopes,
         grantType: "authorization_code",
       },
       code
