@@ -1,18 +1,24 @@
 {
   "name": "discord-oauth2-utils",
-  "version": "2.1.4-0",
+  "version": "3.0.0",
   "type": "module",
   "description": "library for working with discord authorization",
-  "main": "index.js",
-  "typings": "types/index",
   "dependencies": {
     "data-uri-to-buffer": "^4.0.0",
     "formdata-polyfill": "^4.0.10",
     "undici": "^5.20.0",
     "web-streams-polyfill": "^3.2.1"
   },
+  "typings": "build/index",
+  "exports": {
+    ".": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
   "scripts": {
-    "test": "node ./test.js"
+    "test": "bun ./hello.test.ts",
+    "prepack": "tsc"
   },
   "author": "ZFCStar",
   "license": "MIT license",
