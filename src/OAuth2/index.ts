@@ -1,9 +1,9 @@
-import { refreshToken } from "utils/refreshToken.js";
-import type { Scope } from "utils/types.js";
 import { authorizationLink } from "../utils/authorizationLink.js";
 import { fetchGuilds } from "../utils/fetchGuilds.js";
 import { fetchUser } from "../utils/fetchUser.js";
+import { refreshToken } from "../utils/refreshToken.js";
 import { requestToken } from "../utils/requestToken.js";
+import type { Scope } from "../utils/types.js";
 export class OAuth {
   clientId: string;
   clientSecret: string;
