@@ -4,10 +4,7 @@
   "type": "module",
   "description": "library for working with discord authorization",
   "dependencies": {
-    "data-uri-to-buffer": "^4.0.1",
-    "formdata-polyfill": "^4.0.10",
-    "undici": "^7.16.0",
-    "web-streams-polyfill": "^3.3.3"
+    "undici": "^7.16.0"
   },
   "typings": "build/index",
   "exports": {
